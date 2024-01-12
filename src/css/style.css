@@ -1,0 +1,334 @@
+html{
+    font-size: 62,5%;
+    color:(--cor-padrao);
+}
+/* serve para facilitar trabalharmos com rem 1.6rem = 16px e 2rem = 20px */
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: grid;
+    grid-template-areas:"header header header header"
+                        "home home home home"
+                        "about about about about"
+                        "services services services services"
+                        "projects projects projects projects"
+                        "footer footer footer footer";
+
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0 40px;
+    max-width: 1280px;
+}
+
+.header{
+    grid-area: header;
+    background-color: var(--background);
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 0px;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header a:hover h1{
+    color: var(--cor-ativo);
+}
+
+
+
+/* Home */
+
+
+.home{
+    grid-area: home;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89vh;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+}
+
+.home span{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home img{
+    width: 40%;
+}
+
+.home .social{
+    display: flex;
+    flex-direction: column; 
+}
+
+.home .social .social-sobre{
+    margin: 60px 0;   
+
+}
+.home .social .social-sobre a{
+    border-radius: 50px;
+    padding: 10px 30px;
+    border-style: solid ;
+    font-size: 1.6rem;
+}
+
+.home .social .social-sobre a:hover{
+    color: var(--cor-ativo);
+    background-color: var(--cor-bg-ativo);
+}
+
+.home .social .icone-social{
+    display: flex;
+    justify-content: center;
+}
+.home .social .icone-social a{
+    margin: 10px;
+    
+}
+
+.home:after{
+    content: url('../images/seta_preta.png');
+    height: 35px;
+    bottom: 40px;
+    right: 600px;
+    position: absolute; /*Caso não houvesse o elemento pai relative, ele ficaria absoluto em relação a todos os demais elementos, por isso colocamos o elemento pai relativo*/
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+
+}
+@-webkit-keyframes downarrow{
+    0% { -webkit-transform:translateY(0); opacity: 0.4;}
+    0% { -webkit-transform:translateY(0.4em); opacity: 0.9;}
+}
+
+@media(max-width: 425px){
+    .home{
+        height: 60vh;
+    }
+
+    .home h2{
+        font-size: 2.5rem;
+    }
+}
+
+/*ABOUT*/
+
+.about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    max-width: var(--max-width-size);
+    margin: 0;
+    flex-wrap:wrap;
+}
+.about .item{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.about .item h3{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about .item p{
+    font-weight: 400;
+    font-size:1.8rem;
+    margin: 30px 0;
+    
+}
+.about.image{
+    height: 100%;
+    width: 100%;
+}
+.about .item .btn-know-more{
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+
+.about .item .btn-know-more:hover{
+    font-weight: 700;
+}
+
+.about .image.right{
+    background: url('../images/bridge.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about .image.left{
+    background: url('../images/sky.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 425px){
+    .about .item{
+        text-align: center;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/*services */
+
+.services{
+    grid-area: services;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.services .service{
+    padding: 70px 20px;
+}
+
+.services .service img{
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.services .service h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.services .service p{
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 20px auto 0;
+    line-height: 25px;
+}
+
+.services .service:nth-child(1){
+    background-color: lightskyblue;
+
+}
+.services .service:nth-child(2){
+    background-color: lightpink;
+
+}
+
+@media(max-width: 425px){
+    .services{
+     grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+/*PROJECTS*/
+
+.projects{
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.projects img{
+    height: 100%;
+}
+
+.projects a:hover img{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+@media(max-width: 768px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media(max-width: 425px){
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+/* .projects{
+    grid-area: projects;
+    display:flex;
+}
+.projects img{
+    width: 100%;
+    height: 100%;
+}
+.projects a:hover img{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+@media(max-width: 425px){
+    .projects{
+    flex-direction: column; 
+    } */
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    display: flex;
+    background-color: lightgreen;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+.footer h4{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.footer nav{
+    margin: 50px 0;
+}
+.footer nav ul{
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a{
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.footer nav ul li a:hover{
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.footer .social a{
+    margin: 20px;
+}
+
+.footer .social a:hover{
+    color: #fff;
+}
