@@ -181,17 +181,22 @@ main{
 
 .projetos .projetos-container .projeto-informacoes .projeto{
     display: flex;
+    margin: 20px 0;
 
 }
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto{
-    
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .tecnologias-usadas{
+    margin-bottom: 40px;
+}
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .tecnologias-usadas img{ 
+    width: 30px;
+    height: 30px;
+
 }
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto p{
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto a{
-    box-sizing: border-box;
     border-style: solid;
     border-radius: 50px;
     padding: 10px 20px;
