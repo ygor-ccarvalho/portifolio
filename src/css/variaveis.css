@@ -1,8 +1,11 @@
 :root{
 
     --cor-padrao: #333333;
-    --cor-ativo:#708090;
-    --cor-bg-ativo:#000000;
     --background: #FFFFFF;
-    --max-width-size: 1920; 
+
+    --cor-ativo:#ffffff;
+    --cor-menu-ativo: #333333;
+    --cor-bg-ativo:#000000;
+ 
+    --max-width-size: 1920px; 
     }

@@ -2,22 +2,43 @@
     position: sticky;
     top: 0px;
     z-index: 1;
-    
 }
+
+.header .header-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 21.328px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header a:hover h1{
+    color: var(--cor-menu-ativo);
+}
+
 .header nav ul{
     display:flex;
+    justify-content: space-between;
 
 }
 .header nav ul li a{
-    font-size: 1.6rem;
     font-weight: 400;
-    padding: 10px 10px;
+    padding: 30px;
     border-radius: 50px;
     transition: 0.3s;
 }
 
+.header nav ul li .sendo-visualizado{
+    text-decoration: underline;
+}
+
 .header nav ul li a:hover{
-    color: var(--cor-ativo);
+    color: var(--cor-menu-ativo);
     text-decoration: underline;
 }
 
@@ -79,33 +100,3 @@
     top: 0;
 }
 
-@media (max-width: 900px){
-    .header .menu{
-        display:block;
-    }
-    .header nav ul{
-        display: none;
-    }
-    .header input:checked ~ul{
-        display: block;
-    }
-
-    .header nav{
-        position: absolute;
-        top: 8px;
-        right: 20px;
-        z-index: 1; /* foi colocado porque se não tiver, pode ficar embaixo de algum outro item e não poderá ser clicado*/
-    }
-
-    .header nav ul{
-        width: 200px;
-        background-color: #fff;
-        padding: 20px;
-    }
-
-    .header nav ul a{
-        text-align: center;
-        padding: 20px;
-        display: block;
-    }
-}

@@ -1,0 +1,61 @@
+/* @media(max-width: 425px){
+    .home{
+        height: 60vh;
+    }
+
+    .home h2{
+        font-size: 21.328px;
+    }
+    .services{
+        grid-template-columns: 1fr;
+       }
+
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .about .item{
+        text-align: center;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media(max-width: 768px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width: 900px){
+    .header .menu{
+        display:block;
+    }
+    .header nav ul{
+        display: none;
+    }
+    .header input:checked ~ul{
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1; /* foi colocado porque se não tiver, pode ficar embaixo de algum outro item e não poderá ser clicado*/
+    }
+
+    .header nav ul{
+        width: 200px;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .header nav ul a{
+        text-align: center;
+        padding: 20px;
+        display: block;
+    }
+} */
