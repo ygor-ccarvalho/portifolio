@@ -44,7 +44,7 @@
         position: absolute;
         top: 8px;
         right: 20px;
-        z-index: 1; /* foi colocado porque se não tiver, pode ficar embaixo de algum outro item e não poderá ser clicado*/
+        z-index: 1; /* foi colocado porque se não tiver, pode ficar embaixo de algum outro item e não poderá ser clicado
     }
 
     .header nav ul{
