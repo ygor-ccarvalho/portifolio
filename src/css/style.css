@@ -2,13 +2,16 @@ html{
     color:(--cor-padrao);
     scroll-behavior: smooth;
 }
+
 :target {
     scroll-margin-top: 5em;
-  }
+}
+
 body{
     display: flex;
     justify-content: center;
 }
+
 main{
     display: grid;
     grid-template-areas:"header"
@@ -40,9 +43,11 @@ main{
     align-items: center;
     height: 85vh;
 }
+
 .home p{
     font-size: 28.83px;
 }
+
 .home span{
     font-size: 36.49px;
     font-weight: 700;
@@ -61,6 +66,7 @@ main{
     margin: 40px 0;   
 
 }
+
 .home .social .social-sobre a{
     border-radius: 50px;
     padding: 10px 30px;
@@ -78,6 +84,7 @@ main{
     justify-content: center;
     font-size: 28.83px;
 }
+
 .home .social .icone-social a{
     margin: 10px;
     
@@ -92,6 +99,7 @@ main{
     animation: downarrow 0.6s infinite alternate ease-in-out;
 
 }
+
 @-webkit-keyframes downarrow{
     0% { -webkit-transform:translateY(0); opacity: 0.4;}
     0% { -webkit-transform:translateY(0.4em); opacity: 0.9;}
@@ -169,26 +177,34 @@ main{
     height: 92vh;
 }
 
-.projetos .projetos-container .projetos-feitos{
-    margin-bottom: 20px;
-}
-
 .projetos .projetos-container .projeto-informacoes{
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 20px 0;
 }
 
 .projetos .projetos-container .projeto-informacoes .projeto{
     display: flex;
-    margin: 20px 0;
     width: 100%;
     justify-content: space-between;
+  
+}
+.projetos .projetos-container .projeto-informacoes .projeto a{
+    width: 45%;
 }
 .projetos .projetos-container .projeto-informacoes .projeto img{
-    width: 500px;
+    width: 100%;
+    border-radius: 20px;
+
     
 }
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto{
+  margin: 20px;
+  width: 40%;
+}
+
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .tecnologias-usadas{
     margin-bottom: 40px;
 }
@@ -209,7 +225,14 @@ main{
     font-size: 16px;
     
 }
-
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .codigo-projeto{
+    width: 30px;
+    height: 30px;
+}
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .visite-projeto:hover{
+    color: var(--cor-ativo);
+    background-color: var(--cor-bg-ativo);
+}
 .footer{
     grid-area: footer;
    
