@@ -194,7 +194,7 @@ main{
 .projetos .projetos-container .projeto-informacoes .projeto a{
     width: 45%;
 }
-.projetos .projetos-container .projeto-informacoes .projeto img{
+.projetos .projetos-container .projeto-informacoes .projeto #demo-projeto{
     width: 100%;
     border-radius: 20px;
 
@@ -217,22 +217,30 @@ main{
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto p{
     margin: 20px 0;
 }
-
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .botoes-projeto{
+    display:flex;
+    align-items: center;
+}
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .visite-projeto {
     border-style: solid;
     border-radius: 50px;
     padding: 10px 20px;
     font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    
     
 }
-.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .codigo-projeto{
-    width: 30px;
-    height: 30px;
-}
+
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .visite-projeto:hover{
     color: var(--cor-ativo);
     background-color: var(--cor-bg-ativo);
 }
+.projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .codigo-projeto{
+    font-size: 40px;
+    margin-left: 20px;
+}
+
 .footer{
     grid-area: footer;
    
