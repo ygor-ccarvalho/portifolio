@@ -176,6 +176,9 @@ main{
     display: grid;
     height: 92vh;
 }
+.projeto{
+    margin-bottom: 40px;
+}
 
 .projetos .projetos-container .projeto-informacoes{
     display: flex;
@@ -194,7 +197,11 @@ main{
 .projetos .projetos-container .projeto-informacoes .projeto a{
     width: 45%;
 }
-.projetos .projetos-container .projeto-informacoes .projeto #demo-projeto{
+.projetos .projetos-container .projeto-informacoes .projeto .imagem-projeto{
+    width: 45%;
+  
+}
+.projetos .projetos-container .projeto-informacoes .projeto .imagem-projeto .demo-projeto{
     width: 100%;
     border-radius: 20px;
 
@@ -203,6 +210,7 @@ main{
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto{
   margin: 20px;
   width: 40%;
+  text-align: justify;
 }
 
 .projetos .projetos-container .projeto-informacoes .projeto .descricao-projeto .tecnologias-usadas{
