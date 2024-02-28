@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio! Sou Ygor, um entusiasta de tecnologia e apaixonado 
 
 ## Sobre Mim
 
-Sou um desenvolvedor front end jr com experiência em linguagens como HTML,CSS,Javascript e React. Meu objetivo é encontrar meu primeiro emprego na area de tecnologia e expandir meus conhecimentos. Estou sempre em busca de desafios empolgantes e oportunidades para aprender e crescer.
+Sou um desenvolvedor front end jr com experiência em linguagens como HTML, CSS, Javascript e React. Meu objetivo é encontrar meu primeiro emprego na area de tecnologia e expandir meus conhecimentos. Estou sempre em busca de desafios empolgantes e oportunidades para aprender e crescer.
 
 ## Contato
 
@@ -17,9 +17,9 @@ Sou um desenvolvedor front end jr com experiência em linguagens como HTML,CSS,J
 
 - HTML
 - CSS
-- JAVASCRIPT
-- REACT
-- JEST
+- Javascript
+- React
+- Jest
   
 ## Projetos Destacados
 
@@ -31,7 +31,7 @@ Perfil:
 
 - Foto e nome de usuário.
 - Seguidores e seguindo.
-- 
+  
 Repositórios:
 
 - Últimos 10 repositórios.
@@ -41,24 +41,22 @@ Atividades Desafiadoras:
 
 - Enfrentei desafios ao exibir eventos "push" e "create", pois os eventos "create" não possuíam commits associados. Para resolver, utilizei as ferramentas de filter e map. Agora, apresentamos informações detalhadas sobre os commits nos eventos "push" e mensagens significativas nos eventos "create".
 
-Validações Avançadas:
+Validações:
 
 - Implementei verificações para campos preenchidos e existência do usuário.
 - Quando um perfil não possui as informações buscadas é gerado uma mensagem indicando isso.
   
 Tecnologias Utilizadas:
 
-- HTML, CSS, JavaScript.
+- HTML, CSS, Javascript.
 - Integração com GitHub API.
-- 
+  
 Uso:
 
 Insira o nome de usuário do GitHub para visualizar informações.
 
-Experiência Responsiva:
-
-- **GitHub:**(https://ygor-ccarvalho.github.io/GitHub-API/)](https://github.com/ygor-ccarvalho/GitHub-API)
-- **Demo:** (https://ygor-ccarvalho.github.io/GitHub-API/)
+- **GitHub:** https://github.com/ygor-ccarvalho/GitHub-API
+- **Demo:** https://ygor-ccarvalho.github.io/GitHub-API
 
 ### Projeto 2: [Advice Generator]
 
@@ -79,16 +77,7 @@ Tecnologias Utilizadas:
 - CSS 
 - JavaScript
 - integração com Adivce Generator API
-  
-Experiência Cativante:
-
-- A experiência do usuário é prioridade, proporcionando não apenas conselhos valiosos, mas também uma navegação suave e intuitiva.
 
 ## Agradecimentos
 
 Agradeço por visitar meu portfólio. Se tiver alguma pergunta ou quiser iniciar uma conversa, não hesite em me contatar. Estou ansioso para conectar-me com você!
-
---- 
-
-**[Ygor César de Carvalho]**
-[ygorcarvalhodev@gmail.com] | [https://www.linkedin.com/in/ygorcarvalhodev/] | [[GitHub](https://github.com/ygor-ccarvalho)https://github.com/ygor-ccarvalho] | [https://ygor-ccarvalho.github.io/portifolio/#projetos]
